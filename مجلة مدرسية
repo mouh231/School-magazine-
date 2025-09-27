@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مجلة ثانوية الإخوة لياني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+    }
+    .section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: 'Cairo', sans-serif;
+    }
+    button {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1c5980;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 مجلة ثانوية الإخوة لياني</h1>
+    <p>أخبار، حلول، وإبداع من قلب الثانوية</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">الأخبار</a>
+    <a href="#">الأنشطة</a>
+    <a href="#">ركن الإبداع</a>
+    <a href="#">اتصل بنا</a>
+  <a href="login.html">تسجيل الدخول</a>
+  <a href="profile.html">تعديل الحساب</a>
+  <a href="login.html">تسجيل الدخول</a>
+  <a href="profile.html">تعديل الحساب</a>
+
+  </nav>
+
+  <div class="content">
+    <div class="section">
+      <h2>📰 آخر الأخبار</h2>
+      <p>تم تنظيم معرض العلوم يوم الخميس بحضور الأساتذة والتلاميذ، وكانت الأجواء رائعة!</p>
+    </div>
+
+    <div class="section">
+      <h2>💡 ركن الإبداع</h2>
+      <p>هل تواجه مشكلة في الدراسة أو النشاطات؟ اقترح حلاً أو شارك صورة توضيحية:</p>
+      <form>
+        <label for="problem">وصف المشكلة(خوتي الرجاء عدم ذكر اسماء):</label>
+        <textarea id="problem" rows="4" placeholder="اكتب المشكلة هنا..."></textarea>
+
+        <label for="solution">اقتراحك للحل(خوتي الرجاء عدم ذكر اسماء):</label>
+        <textarea id="solution" rows="4" placeholder="اكتب الحل المقترح..."></textarea>
+
+        <label for="image">أرسل صورة (مانبقاوش غير نهدرو🥲)(رابط):</label>
+        <input type="text" id="image" placeholder="ضع رابط الصورة هنا">
+
+        <button type="submit">إرسال الاقتراح</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>  
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>آخر الأخبار - مجلة ثانوية الإخوة لياني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 20px;
+    }
+    .news-item {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📰 آخر الأخبار</h1>
+    <p>كل جديد من ثانوية الإخوة لياني</p>
+  </header>
+
+  <div class="content">
+    <div class="news-item">
+      <h2>📅 معرض العلوم</h2>
+      <p>تم تنظيم معرض العلوم يوم الخميس بحضور الأساتذة والتلاميذ، وكانت الأجواء رائعة!</p>
+    </div>
+
+    <div class="news-item">
+      <h2>🏆 نتائج المسابقة الأدبية</h2>
+      <p>فازت الطالبة آية بالمرتبة الأولى في مسابقة الشعر الوطني، ألف مبروك!</p>
+    </div>
+
+    <div class="news-item">
+      <h2>🎤 لقاءات مع الاساتدة </h2>
+      <p>هنا ستجد كل مايتعلق ب ‏لقاءات بين التلميذ والاستاذ في المجال الدراسي والعلمي وتوعوي.</p>
+    </div>
+  </div>
+
+  <footer> 
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الأنشطة - مجلة ثانوية الإخوة لياني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 20px;
+    }
+    .section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #2c3e50;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏃‍♂️ الأنشطة المدرسية</h1>
+    <p>مبادرات ومشاريع من تلاميذ ثانوية الإخوة لياني</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>📘 مشاريع أولى ثانوي</h2>
+      <p>هنا ستجد كل ما يتعلق بمشاريع أولى ثانوي: من مجسمات علمية إلى عروض تقديمية حول البيئة والتكنولوجيا.</p>
+    </div>
+
+    <div class="section">
+      <h2>📗 مشاريع ثانية ثانوي</h2>
+      <p>هنا ستجد كل ما يتعلق بمشاريع ثانية ثانوي: حملات توعية، بحوث ميدانية، وتجارب علمية في مختلف المواد.</p>
+    </div>
+
+    <div class="section">
+      <h2>📕 مشاريع ثالثة ثانوي</h2>
+      <p>هنا ستجد كل ما يتعلق بمشاريع ثالثة ثانوي: عروض حول التوجيه الجامعي، دراسات أدبية، وتحضيرات للبكالوريا.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚽ قسم الرياضة</h2>
+      <p>نظم قسم التربية البدنية دوري كرة القدم، وشارك فيه كل الأقسام. كما تم تنظيم يوم رياضي مفتوح شمل الجري، القفز، والكرة الطائرة.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 مجلة ثانوية الإخوة لياني - تصميم الطالب Mouhammed
+  </footer>
+
+</body>
+</html>
